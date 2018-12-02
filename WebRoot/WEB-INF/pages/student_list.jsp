@@ -1,0 +1,47 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>  
+    <title>工会</title>   
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+  </head>
+  
+  <body class="container">
+  
+    <div class="jumbotron">
+	  <div class="alert alert-danger" role="alert"><h1>工会成员</h1></div>
+	  
+	  <p>扛二百斤麦子十里山路不换肩</p>
+	  <p><a class="btn btn-primary btn-lg" href="#" role="button">通商宽衣</a></p>
+	  <a class="btn btn-default btn-lg" href="${pageContext.request.contextPath }/servlet/IndexUIServlet" role="button">返回🐎？</a>
+	</div>
+
+  <table class="table table-bordered table-hover">
+    <tr>
+      <th>#姓名</th>
+      <th>#学号</th>
+      <th>#等级</th>
+    </tr>
+    
+	  <c:forEach items="${requestScope.students }" var="st">
+	  <tr>
+	    <td>${st.name }</td>
+	    <td>${st.id }</td>
+	    <td>${st.level}</td>	
+	  </tr>
+	  </c:forEach>
+			
+ </table>   
+	
+	 
+	
+ </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</html>

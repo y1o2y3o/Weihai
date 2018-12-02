@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name></display-name>
+
+  <filter>
+    <filter-name>LoginFilter</filter-name>
+    <filter-class>web.controller.filter.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/servlet/DownloadFileServlet</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/servlet/ViewFactoryServlet</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/servlet/ViewListServlet</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/servlet/ClearBinServlet</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/servlet/DeleteFloderServlet</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/servlet/RestoreFileServlet</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/servlet/DeleteFileServlet</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/servlet/ViewBinServlet</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/servlet/RemoveFileServlet</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/servlet/UploadFileServlet</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/servlet/DeleteShaduleServlet</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/servlet/LogoutServlet</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/servlet/ManageShaduleServlet</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/servlet/ViewDiskServlet</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/servlet/ViewShaduleServlet</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/servlet/DiskMainUIServlet</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/servlet/ManageShaduleUIServlet</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/servlet/CreateFloderServlet</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterStudentUIServlet</servlet-name>
+    <servlet-class>web.UI.RegisterStudentUIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterStudentServlet</servlet-name>
+    <servlet-class>web.controller.RegisterStudentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginUIServlet</servlet-name>
+    <servlet-class>web.UI.LoginUIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>web.controller.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>IndexUIServlet</servlet-name>
+    <servlet-class>web.UI.IndexUIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>web.controller.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewShadule</servlet-name>
+    <servlet-class>web.controller.ViewShadule</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewShaduleServlet</servlet-name>
+    <servlet-class>web.controller.ViewShaduleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ManageShaduleServlet</servlet-name>
+    <servlet-class>web.controller.ManageShaduleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ManageShaduleUIServlet</servlet-name>
+    <servlet-class>web.UI.ManageShaduleUIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteShaduleServlet</servlet-name>
+    <servlet-class>web.controller.DeleteShaduleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DiskMainUIServlet</servlet-name>
+    <servlet-class>web.UI.DiskMainUIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewDiskServlet</servlet-name>
+    <servlet-class>web.controller.ViewDiskServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadFileServlet</servlet-name>
+    <servlet-class>web.controller.disk.UploadFileServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CreateFloderServlet</servlet-name>
+    <servlet-class>web.controller.disk.CreateFloderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RemoveFileServlet</servlet-name>
+    <servlet-class>web.controller.disk.RemoveFileServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewBinServlet</servlet-name>
+    <servlet-class>web.controller.disk.ViewBinServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteFileServlet</servlet-name>
+    <servlet-class>web.controller.disk.DeleteFileServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RestoreFileServlet</servlet-name>
+    <servlet-class>web.controller.disk.RestoreFileServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteFloderServlet</servlet-name>
+    <servlet-class>web.controller.disk.DeleteFloderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ClearBinServlet</servlet-name>
+    <servlet-class>web.controller.disk.ClearBinServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewListServlet</servlet-name>
+    <servlet-class>web.controller.ViewListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterStudentUIServlet</servlet-name>
+    <url-pattern>/servlet/RegisterStudentUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterStudentServlet</servlet-name>
+    <url-pattern>/servlet/RegisterStudentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginUIServlet</servlet-name>
+    <url-pattern>/servlet/LoginUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/servlet/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IndexUIServlet</servlet-name>
+    <url-pattern>/servlet/IndexUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/servlet/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewShadule</servlet-name>
+    <url-pattern>/servlet/ViewShadule</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewShaduleServlet</servlet-name>
+    <url-pattern>/servlet/ViewShaduleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ManageShaduleServlet</servlet-name>
+    <url-pattern>/servlet/ManageShaduleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ManageShaduleUIServlet</servlet-name>
+    <url-pattern>/servlet/ManageShaduleUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteShaduleServlet</servlet-name>
+    <url-pattern>/servlet/DeleteShaduleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DiskMainUIServlet</servlet-name>
+    <url-pattern>/servlet/DiskMainUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewDiskServlet</servlet-name>
+    <url-pattern>/servlet/ViewDiskServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadFileServlet</servlet-name>
+    <url-pattern>/servlet/UploadFileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CreateFloderServlet</servlet-name>
+    <url-pattern>/servlet/CreateFloderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RemoveFileServlet</servlet-name>
+    <url-pattern>/servlet/RemoveFileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewBinServlet</servlet-name>
+    <url-pattern>/servlet/ViewBinServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteFileServlet</servlet-name>
+    <url-pattern>/servlet/DeleteFileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RestoreFileServlet</servlet-name>
+    <url-pattern>/servlet/RestoreFileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteFloderServlet</servlet-name>
+    <url-pattern>/servlet/DeleteFloderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ClearBinServlet</servlet-name>
+    <url-pattern>/servlet/ClearBinServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewListServlet</servlet-name>
+    <url-pattern>/servlet/ViewListServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>TestUIServlet</display-name>
+    <servlet-name>TestUIServlet</servlet-name>
+    <servlet-class>web.UI.TestUIServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestUIServlet</servlet-name>
+    <url-pattern>/TestUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ViewFactoryServlet</display-name>
+    <servlet-name>ViewFactoryServlet</servlet-name>
+    <servlet-class>web.controller.ViewFactoryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewFactoryServlet</servlet-name>
+    <url-pattern>/servlet/ViewFactoryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DownloadFileServlet</display-name>
+    <servlet-name>DownloadFileServlet</servlet-name>
+    <servlet-class>web.controller.disk.DownloadFileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DownloadFileServlet</servlet-name>
+    <url-pattern>/servlet/DownloadFileServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

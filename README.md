@@ -15,4 +15,3 @@
     学生账户(创建登陆)
     云盘系统（上传下载文件，新建回收删除文件和文件夹，验证文件类型）
     课表（创建，查看，更新， 删除）
-![](https://github.com/zksfromusa/Weihai/blob/master/%E7%95%8C%E9%9D%A2.png)
